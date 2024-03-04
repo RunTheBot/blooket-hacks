@@ -6,7 +6,7 @@
     window.confirm = n.contentWindow.confirm.bind(window);
     n.remove();
             function reactHandler() {
-                return Object.values(document.querySelector('#app > div > div'))[1].children[1]._owner;
+                return Object.values(document.querySelector('#body'))[1].children[1]._owner;
             };
         
             if (window.location.pathname == '/tower/battle' || window.location.pathname == '/tower/start') {
@@ -25,7 +25,7 @@ function footer() {
     let element = document.createElement('div');
 
     element.style = `font-family: "Nunito", sans-serif; font-size: 14px; height: 65px; width: 175px; border: 4px solid rgb(15, 15, 15); background: rgb(240, 240, 240); position: absolute; top: 20x; left: 20px; border-radius: 10px; color: rgb(0, 0, 0); text-align: center;`;
-    element.innerHTML = `<p>Made by gliz <br> My <a style="color: #0000ff;" href="https://twitter.com/glizuwu" target="_blank">twitter</a></p>`;
+    element.innerHTML = `<p>Made by gliz Modified by runthebot<br> My <a style="color: #0000ff;" href="https://github.com/RunTheBot" target="_blank">github</a></p>`;
     document.body.appendChild(element);
     
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
